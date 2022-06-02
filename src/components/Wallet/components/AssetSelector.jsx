@@ -1,13 +1,15 @@
 import { useERC20Balance } from "hooks/useERC20Balance";
 import { useMoralis, useNativeBalance } from "react-moralis";
 import { Image, Select } from "antd";
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 
 export default function AssetSelector({ setAsset, style }) {
   const { assets } = useERC20Balance();
   const { data: nativeBalance, nativeToken } = useNativeBalance();
   const { Moralis } = useMoralis();
-
+  useEffect(() => {
+    if (!assets || !nativeBalance) return null;
+  }, [assets, nativeBalance]);
   const fullBalance = useMemo(() => {
     if (!assets || !nativeBalance) return null;
     return [

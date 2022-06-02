@@ -1,0 +1,28 @@
+{
+  "contracts": {
+    "BEP20BNB": "09bd8048b295eb857703ea38434ad5cf58159d06",
+    "BEP20BUSD": "5854b8fd5f59610280cb2642bae6e32c4c593186",
+    "BEP20ETH": "6b2929cdd7bd467fee20e041998aaf27017d4ec4",
+    "BEP20ICC": "c580aa9ebe9addbeb2b602d06fae60decf00b8c1",
+    "DepositAndWithdraw": "f60941dc6d574e6429641f77023e8174960fe46d",
+    "OpenZeppelin/openzeppelin-contracts@4.2.0/ERC20": "05b44f80e08900a7aa6bf3a608b9deb527af43d3"
+  },
+  "tests": {
+    "tests/unit/test_depositAndWithdraw.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".F",
+      "sha1": "06c11e78518f70d191cba2928f7b5ed0bd3cf30c",
+      "txhash": ["2ed7a39bbc8f6f926cf169bb0d715d6f902deeb5"]
+    }
+  },
+  "tx": {
+    "2ed7a39bbc8f6f926cf169bb0d715d6f902deeb5": {
+      "DepositAndWithdraw": {
+        "0": [[], [], []],
+        "2": [[1], [], []],
+        "3": [[], [], []]
+      }
+    }
+  }
+}

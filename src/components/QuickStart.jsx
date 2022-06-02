@@ -36,7 +36,7 @@ export default function QuickStart({ isServerInfo }) {
         style={styles.card}
         title={
           <>
-            📝 <Text strong>To-Do List</Text>
+            📝 <Text strong>ToDo List</Text>
           </>
         }
       >

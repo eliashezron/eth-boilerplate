@@ -15,7 +15,9 @@
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "react-app", "prettier"
+    
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -25,7 +27,7 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react","prettier"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
@@ -33,5 +35,12 @@
     "react/jsx-key": "off",
     "react/no-unescaped-entities": "off",
     "linebreak-style": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
+
 }
