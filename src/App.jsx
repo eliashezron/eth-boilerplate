@@ -9,6 +9,7 @@ import {
 import Account from "components/Account/Account";
 import Chains from "components/Chains";
 import Wallet from "components/Wallet";
+import Withdraw from "components/withdraw";
 import { Layout } from "antd";
 import "antd/dist/antd.css";
 import "./style.css";
@@ -75,6 +76,9 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/">
               <Redirect to="/wallet" />
+            </Route>
+            <Route path="/withdraw">
+              <Withdraw />
             </Route>
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>
