@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import Metamask from "./WalletIcons/metamaskWallet.png";
 import Coin98 from "./WalletIcons/Coin98.png";
 import WalletConnect from "./WalletIcons/wallet-connect.svg";

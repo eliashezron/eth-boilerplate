@@ -1,6 +1,8 @@
 {
   "name": "ethereum-boilerplate",
+  "homepage": "https://github.com/eliashezron/eth-boilerplate",
   "version": "0.1.0",
+
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -35,9 +37,10 @@
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "devchain": "node Truffle/scripts/devChain.js",
+    "predeploy": "npm run build",
     "connect": "moralis-admin-cli connect-local-devchain",
     "watch:events": "moralis-admin-cli add-contract",
-    "deploy": "node Truffle/scripts/deployContract.js",
+    "deploy": "gh-pages -d build",
     "deploypage": "gh-pages -d build",
     "clean": "npx gh-pages-clean",
     "lint:check": "eslint .",
