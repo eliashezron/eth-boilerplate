@@ -32,3 +32,6 @@ typechain
 #Truffle files
 /Truffle/build
 /Truffle/data
+//  Mandatory info for starting the app
+// REACT_APP_MORALIS_APPLICATION_ID = 4urctmH7vk5oNRJR1RNqXReYg0cRjHhvGqGCgYda
+// REACT_APP_MORALIS_SERVER_URL = https://01ob4llhuhhv.usemoralis.com:2053/server

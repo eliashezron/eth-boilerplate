@@ -71,14 +71,14 @@ const App = ({ isServerInfo }) => {
 
         <div style={styles.content}>
           <Switch>
-            <Route exact path="/wallet">
+            <Route exact path="/deposit">
               <Wallet isServerInfo={isServerInfo} />
-            </Route>
-            <Route path="/">
-              <Redirect to="/wallet" />
             </Route>
             <Route path="/withdraw">
               <Withdraw />
+              <Route path="/">
+                <Redirect to="/deposit" />
+              </Route>
             </Route>
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>

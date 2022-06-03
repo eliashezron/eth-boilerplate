@@ -18,8 +18,11 @@ function MenuItems() {
       }}
       defaultSelectedKeys={[pathname]}
     >
-      <Menu.Item key="/wallet">
-        <NavLink to="/wallet">Deposit</NavLink>
+      <Menu.Item key="/deposit">
+        <NavLink to="/deposit">Deposit</NavLink>
+      </Menu.Item>
+      <Menu.Item key="/withdraw">
+        <NavLink to="/withdraw">Withdraw</NavLink>
       </Menu.Item>
     </Menu>
   );
