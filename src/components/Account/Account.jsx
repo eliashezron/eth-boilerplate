@@ -44,7 +44,7 @@ const styles = {
 };
 
 function Account() {
-  const { authenticate, isAuthenticated, account, chainId, logout } =
+  const { authenticate, isAuthenticated, account, chainId, logout, authError } =
     useMoralis();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isAuthModalVisible, setIsAuthModalVisible] = useState(false);
@@ -76,7 +76,7 @@ function Account() {
               fontSize: "20px",
             }}
           >
-            Connect Wallet
+            Connect
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
             {connectors.map(({ title, icon, connectorId }, key) => (
@@ -100,6 +100,16 @@ function Account() {
           </div>
         </Modal>
       </>
+    );
+  }
+  if (authError) {
+    return (
+      <Modal>
+        console.log(authError.message)
+        <div>
+          <Text>{authError.message}</Text>
+        </div>
+      </Modal>
     );
   }
 

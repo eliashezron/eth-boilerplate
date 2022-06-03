@@ -11,7 +11,7 @@ import Chains from "components/Chains";
 import Wallet from "components/Wallet";
 import Withdraw from "components/withdraw";
 import { Layout } from "antd";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 import "./style.css";
 import MenuItems from "./components/MenuItems";
 const { Header } = Layout;
